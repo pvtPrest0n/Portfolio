@@ -1,0 +1,310 @@
+@import url(../assets/style_reset.css);
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../assets/fonts/Gilroy-Medium.eot');
+	src: local('☺'), url('../assets/fonts/Gilroy-Medium.woff') format('woff'), url('../assets/fonts/Gilroy-Medium.ttf') format('truetype'), url('../assets/fonts/Gilroy-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../assets/fonts/Gilroy-Bold.eot');
+	src: local('☺'), url('../assets/fonts/Gilroy-Bold.woff') format('woff'), url('../assets/fonts/Gilroy-Bold.ttf') format('truetype'), url('../assets/fonts/Gilroy-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+/*css variables*/
+
+:root{
+	--container-max-width: 975px;
+	--container-padding: 0 15px;
+	--container-width: 100%;
+	--secondary: #828282;
+	--active-button: #070707;
+}
+
+body{
+	font-family: Gilroy;
+	background-color: #FFFFFF;
+	color: #070707;
+}
+
+/* Navigation */
+.container {
+	max-width: var(--container-max-width);
+	width: var(--container-width);
+	margin: 0 auto;
+	padding: var(--container-padding);
+}
+.navigation {
+	padding: 33px 0 32px 0;
+	border-bottom: solid 1px;
+	border-color: var(--secondary);
+}
+.navigation-nav_items {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 155.6px;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+	color: var(--secondary);
+}
+
+.navigation-nav_items:first-child{
+	margin-left: 0;
+}
+
+.navigation-nav_items li:hover{
+	color: var(--active-button);
+	transition: ease 0.5s;
+	}
+.active {
+	color: var(--active-button);
+}
+
+/* Name and role */
+.name-role-language {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25.7px;
+}
+.name {
+	width: 123.5px;
+	font-size: 47px;
+	font-weight: 700;
+	line-height: 59px;
+}
+.role {
+	display: flex;
+	align-items: flex-end;
+	width: 155.65px;
+	padding-bottom: 14px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+}
+.language {
+	display: flex;
+	align-items: flex-end;
+	font-size: 16px;
+	line-height: 20px;
+	padding-bottom: 14px;
+}
+.ru {
+	color: var(--secondary);
+}
+.en {
+	margin-left: 2.5px;
+	border-left: solid 2px;
+	padding-left: 2.5px;
+	font-weight: 700;
+}
+
+.ru,.en{
+	cursor: pointer;
+}
+
+.ru,.en:hover{
+	color:var(--secondary)
+}
+
+/* Photo */
+.photo {
+	margin-top: 34px;
+}
+
+.photo img{
+	max-width: 100%;
+}
+
+/* About me */
+
+.about_me{
+	margin-top: 215px;
+	text-align: center;
+}
+
+.title {
+	margin-bottom: 17.7px;
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 42px;
+	
+}
+
+.section_about_me p{
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+	margin-bottom: 40px;
+}
+
+.section_about_me p:last-child{
+	margin-bottom: 0;
+}
+
+/* Skills */
+.skills {
+	margin-top: 200px;
+	text-align: center;
+}
+
+.description {
+	margin: 55px 0 76px 0;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+}
+
+/* Rating */
+.content_row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 223px;
+	text-align: center;
+	color: var(--secondary);
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 700;
+}
+.photoshop {
+	width: 166.5px;
+}
+
+.ps {
+	margin-bottom: 20px;
+}
+
+.photoshop-description {
+	margin-bottom: 35px;
+}
+
+.illustrator {
+	width: 166.5px;
+}
+
+.ai {
+	margin-bottom: 20px;
+}
+
+.illustrator-description {
+	margin-bottom: 35px;
+}
+
+.after_effects {
+	width: 166.5px;
+}
+
+.ae {
+	margin-bottom: 20px;
+}
+
+.after_effects-description {
+	margin-bottom: 35px;
+}
+
+.figma {
+	width: 166.5px;
+	text-align: center;
+}
+.fg {
+	margin-bottom: 20px;
+}
+.figma-description {
+	margin-bottom: 53px;
+}
+
+/* Portfolio */
+.content{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+}
+
+.content a:hover{
+	color: var(--secondary);
+}
+
+.title_portfolio{
+	margin-bottom: 47px;
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 42px;
+}
+
+
+.content img {
+	max-width: 100%;
+}
+
+.new_collection {
+	margin-bottom: 40px;
+}
+.fashion_store {
+	text-decoration: underline;
+}
+.reebok {
+	margin: 99px 0 40px 0;
+}
+.reebok_store {
+	text-decoration: underline;
+}
+.braun {
+	margin: 99px 0 40px 0;
+}
+.braun_page {
+	text-decoration: underline;
+}
+
+/* Footer */
+.container_footer {
+	max-width: 372px;
+	padding: 0 15px;
+	width: 100%;
+	margin: 0 auto;
+}
+.footer_content {
+	margin-top: 210px;
+	text-align: center;
+}
+.contacts {
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 42px;
+}
+.contacts_description {
+	margin: 20px 0 29.5px 0;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+}
+.message_btn {
+	font-size: 18px;
+	color: #FFFFFF;
+	outline: solid 1px;
+	background-color: black;
+	border-radius: 50px;
+	padding: 13px 29px;
+}
+
+.message_btn:hover{
+	color: var(--secondary);
+}
+.footer_socials {
+	display: flex;
+	justify-content: space-between;
+	margin: 85px 0 45px 0;
+}
+
+.footer_comment {
+	text-align: center;
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--secondary);
+	margin-bottom: 123px;
+}
