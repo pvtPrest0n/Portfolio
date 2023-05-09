@@ -108,6 +108,7 @@ body {
   line-height: 20px;
   font-size: 16px;
   cursor: pointer;
+  background: none;
 
   /* color: var(--secondary); */
 }
